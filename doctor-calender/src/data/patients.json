@@ -1,0 +1,363 @@
+[
+    {
+      "mrn": "1234567",
+      "name": "Jane Doe",
+      "DOB": "01/01/1990",
+      "phone": "555-555-0001",
+      "insurance": {
+        "name": "Health Insurance A",
+        "id": "INS12345",
+        "group": "GroupA"
+      },
+      "photo": "https://randomuser.me/api/portraits/women/30.jpg"
+    },
+    {
+      "mrn": "2345678",
+      "name": "John Smith",
+      "DOB": "05/15/1985",
+      "phone": "555-555-0002",
+      "insurance": {
+        "name": "Health Insurance B",
+        "id": "INS12346",
+        "group": "GroupB"
+      },
+      "photo": "https://randomuser.me/api/portraits/men/35.jpg"
+    },
+    {
+      "mrn": "3456789",
+      "name": "Alice Johnson",
+      "DOB": "11/23/1978",
+      "phone": "555-555-0003",
+      "insurance": {
+        "name": "Health Insurance C",
+        "id": "INS12347",
+        "group": "GroupC"
+      },
+      "photo": "https://randomuser.me/api/portraits/women/88.jpg"
+    },
+    {
+      "mrn": "4567890",
+      "name": "Robert Brown",
+      "DOB": "09/12/1965",
+      "phone": "555-555-0004",
+      "insurance": {
+        "name": "Health Insurance D",
+        "id": "INS12348",
+        "group": "GroupD"
+      },
+      "photo": "https://randomuser.me/api/portraits/men/4.jpg"
+    },
+    {
+      "mrn": "5678901",
+      "name": "Mary Davis",
+      "DOB": "03/19/1992",
+      "phone": "555-555-0005",
+      "insurance": {
+        "name": "Health Insurance E",
+        "id": "INS12349",
+        "group": "GroupE"
+      },
+      "photo": "https://randomuser.me/api/portraits/women/53.jpg"
+    },
+    {
+      "mrn": "6789012",
+      "name": "Michael Wilson",
+      "DOB": "07/07/1988",
+      "phone": "555-555-0006",
+      "insurance": {
+        "name": "Health Insurance F",
+        "id": "INS12350",
+        "group": "GroupF"
+      },
+      "photo": "https://randomuser.me/api/portraits/men/62.jpg"
+    },
+    {
+      "mrn": "7890123",
+      "name": "Linda Martinez",
+      "DOB": "02/28/1975",
+      "phone": "555-555-0007",
+      "insurance": {
+        "name": "Health Insurance G",
+        "id": "INS12351",
+        "group": "GroupG"
+      },
+      "photo": "https://randomuser.me/api/portraits/women/7.jpg"
+    },
+    {
+      "mrn": "8901234",
+      "name": "William Garcia",
+      "DOB": "06/30/1980",
+      "phone": "555-555-0008",
+      "insurance": {
+        "name": "Health Insurance H",
+        "id": "INS12352",
+        "group": "GroupH"
+      },
+      "photo": "https://randomuser.me/api/portraits/men/8.jpg"
+    },
+    {
+      "mrn": "9012345",
+      "name": "Elizabeth Miller",
+      "DOB": "12/25/1995",
+      "phone": "555-555-0009",
+      "insurance": {
+        "name": "Health Insurance I",
+        "id": "INS12353",
+        "group": "GroupI"
+      },
+      "photo": "https://randomuser.me/api/portraits/women/9.jpg"
+    },
+    {
+      "mrn": "0123456",
+      "name": "Charles Anderson",
+      "DOB": "08/14/1982",
+      "phone": "555-555-0010",
+      "insurance": {
+        "name": "Health Insurance J",
+        "id": "INS12354",
+        "group": "GroupJ"
+      },
+      "photo": "https://randomuser.me/api/portraits/men/10.jpg"
+    },
+    {
+      "mrn": "1234568",
+      "name": "Nancy White",
+      "DOB": "02/14/1970",
+      "phone": "555-555-0011",
+      "insurance": {
+        "name": "Health Insurance K",
+        "id": "INS12355",
+        "group": "GroupK"
+      },
+      "photo": "https://randomuser.me/api/portraits/women/11.jpg"
+    },
+    {
+      "mrn": "2345679",
+      "name": "George King",
+      "DOB": "03/16/1983",
+      "phone": "555-555-0012",
+      "insurance": {
+        "name": "Health Insurance L",
+        "id": "INS12356",
+        "group": "GroupL"
+      },
+      "photo": "https://randomuser.me/api/portraits/men/12.jpg"
+    },
+    {
+      "mrn": "3456780",
+      "name": "Emma Wright",
+      "DOB": "04/18/1991",
+      "phone": "555-555-0013",
+      "insurance": {
+        "name": "Health Insurance M",
+        "id": "INS12357",
+        "group": "GroupM"
+      },
+      "photo": "https://randomuser.me/api/portraits/women/13.jpg"
+    },
+    {
+      "mrn": "4567891",
+      "name": "Oscar Green",
+      "DOB": "05/20/1986",
+      "phone": "555-555-0014",
+      "insurance": {
+        "name": "Health Insurance N",
+        "id": "INS12358",
+        "group": "GroupN"
+      },
+      "photo": "https://randomuser.me/api/portraits/men/14.jpg"
+    },
+    {
+      "mrn": "5678902",
+      "name": "Sophia Adams",
+      "DOB": "06/22/1979",
+      "phone": "555-555-0015",
+      "insurance": {
+        "name": "Health Insurance O",
+        "id": "INS12359",
+        "group": "GroupO"
+      },
+      "photo": "https://randomuser.me/api/portraits/women/15.jpg"
+    },
+    {
+      "mrn": "6789013",
+      "name": "Liam Hall",
+      "DOB": "07/24/1992",
+      "phone": "555-555-0016",
+      "insurance": {
+        "name": "Health Insurance P",
+        "id": "INS12360",
+        "group": "GroupP"
+      },
+      "photo": "https://randomuser.me/api/portraits/men/16.jpg"
+    },
+    {
+      "mrn": "7890124",
+      "name": "Mia Allen",
+      "DOB": "08/26/1987",
+      "phone": "555-555-0017",
+      "insurance": {
+        "name": "Health Insurance Q",
+        "id": "INS12361",
+        "group": "GroupQ"
+      },
+      "photo": "https://randomuser.me/api/portraits/women/17.jpg"
+    },
+    {
+      "mrn": "8901235",
+      "name": "Jacob Young",
+      "DOB": "09/28/1990",
+      "phone": "555-555-0018",
+      "insurance": {
+        "name": "Health Insurance R",
+        "id": "INS12362",
+        "group": "GroupR"
+      },
+      "photo": "https://randomuser.me/api/portraits/men/18.jpg"
+    },
+    {
+      "mrn": "9012346",
+      "name": "Amelia Hernandez",
+      "DOB": "10/30/1985",
+      "phone": "555-555-0019",
+      "insurance": {
+        "name": "Health Insurance S",
+        "id": "INS12363",
+        "group": "GroupS"
+      },
+      "photo": "https://randomuser.me/api/portraits/women/19.jpg"
+    },
+    {
+      "mrn": "0123457",
+      "name": "Lucas Robinson",
+      "DOB": "11/01/1978",
+      "phone": "555-555-0020",
+      "insurance": {
+        "name": "Health Insurance T",
+        "id": "INS12364",
+        "group": "GroupT"
+      },
+      "photo": "https://randomuser.me/api/portraits/men/20.jpg"
+    },
+    {
+      "mrn": "1234569",
+      "name": "Ava Martinez",
+      "DOB": "12/03/1994",
+      "phone": "555-555-0021",
+      "insurance": {
+        "name": "Health Insurance U",
+        "id": "INS12365",
+        "group": "GroupU"
+      },
+      "photo": "https://randomuser.me/api/portraits/women/21.jpg"
+    },
+    {
+      "mrn": "2345680",
+      "name": "Ethan Moore",
+      "DOB": "01/05/1981",
+      "phone": "555-555-0022",
+      "insurance": {
+        "name": "Health Insurance V",
+        "id": "INS12366",
+        "group": "GroupV"
+      },
+      "photo": "https://randomuser.me/api/portraits/men/22.jpg"
+    },
+    {
+      "mrn": "3456781",
+      "name": "Charlotte Lee",
+      "DOB": "02/07/1996",
+      "phone": "555-555-0023",
+      "insurance": {
+        "name": "Health Insurance W",
+        "id": "INS12367",
+        "group": "GroupW"
+      },
+      "photo": "https://randomuser.me/api/portraits/women/23.jpg"
+    },
+    {
+      "mrn": "4567892",
+      "name": "Mason Harris",
+      "DOB": "03/09/1974",
+      "phone": "555-555-0024",
+      "insurance": {
+        "name": "Health Insurance X",
+        "id": "INS12368",
+        "group": "GroupX"
+      },
+      "photo": "https://randomuser.me/api/portraits/men/24.jpg"
+    },
+    {
+      "mrn": "5678903",
+      "name": "Isabella Clark",
+      "DOB": "04/11/1989",
+      "phone": "555-555-0025",
+      "insurance": {
+        "name": "Health Insurance Y",
+        "id": "INS12369",
+        "group": "GroupY"
+      },
+      "photo": "https://randomuser.me/api/portraits/women/25.jpg"
+    },
+    {
+      "mrn": "6789014",
+      "name": "James Lewis",
+      "DOB": "05/13/1982",
+      "phone": "555-555-0026",
+      "insurance": {
+        "name": "Health Insurance Z",
+        "id": "INS12370",
+        "group": "GroupZ"
+      },
+      "photo": "https://randomuser.me/api/portraits/men/26.jpg"
+    },
+    {
+      "mrn": "7890125",
+      "name": "Emily Walker",
+      "DOB": "06/15/1977",
+      "phone": "555-555-0027",
+      "insurance": {
+        "name": "Health Insurance AA",
+        "id": "INS12371",
+        "group": "GroupAA"
+      },
+      "photo": "https://randomuser.me/api/portraits/women/27.jpg"
+    },
+    {
+      "mrn": "8901236",
+      "name": "Henry Scott",
+      "DOB": "07/17/1988",
+      "phone": "555-555-0028",
+      "insurance": {
+        "name": "Health Insurance BB",
+        "id": "INS12372",
+        "group": "GroupBB"
+      },
+      "photo": "https://randomuser.me/api/portraits/men/28.jpg"
+    },
+    {
+      "mrn": "9012347",
+      "name": "Mia Perez",
+      "DOB": "08/19/1991",
+      "phone": "555-555-0029",
+      "insurance": {
+        "name": "Health Insurance CC",
+        "id": "INS12373",
+        "group": "GroupCC"
+      },
+      "photo": "https://randomuser.me/api/portraits/women/29.jpg"
+    },
+    {
+      "mrn": "0123458",
+      "name": "Daniel King",
+      "DOB": "09/21/1980",
+      "phone": "555-555-0030",
+      "insurance": {
+        "name": "Health Insurance DD",
+        "id": "INS12374",
+        "group": "GroupDD"
+      },
+      "photo": "https://randomuser.me/api/portraits/men/30.jpg"
+    }
+  ]
+  
