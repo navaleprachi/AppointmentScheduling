@@ -26,6 +26,12 @@ const Scheduling = () => {
     if (!appointmentDetails.time) {
       alert("Please select a time slot before scheduling.");
       return;
+    } else if (!appointmentDetails.patient) {
+      alert("Please enter patient name.");
+      return;
+    } else if (!appointmentDetails.appointmentType) {
+      alert("Please select appointment type.");
+      return;
     }
 
     const serializableAppointmentDetails = {
@@ -78,12 +84,12 @@ const Scheduling = () => {
           }
         >
           <option>Select an option</option>
-          <option value="follow-up">Follow-up</option>
-          <option value="new consult">New Consult</option>
-          <option value="pre-op">Pre-op</option>
-          <option value="urgent">Urgent</option>
-          <option value="annual exam">Annual Exam</option>
-          <option value="new physical">New Physical</option>
+          <option value="Follow-up">Follow-up</option>
+          <option value="New consult">New Consult</option>
+          <option value="Pre-op">Pre-op</option>
+          <option value="Urgent">Urgent</option>
+          <option value="Annual exam">Annual Exam</option>
+          <option value="New physical">New Physical</option>
         </select>
         <button
           className="ml-5 border rounded-full p-1 w-32 bg-blue-700 text-white hover:bg-blue-600"
