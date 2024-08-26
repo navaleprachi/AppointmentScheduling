@@ -29,8 +29,8 @@ const CustomCalendar = ({ onSlotSelect }) => {
       localizer={localizer}
       events={events}
       defaultView="week"
-      step={30} // Time step in minutes
-      timeslots={2} // Number of timeslots per step
+      step={30}
+      timeslots={2}
       onSelectSlot={handleSelectSlot}
       style={{ height: 500 }}
     />

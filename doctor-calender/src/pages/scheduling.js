@@ -3,6 +3,7 @@ import CustomCalendar from "../components/calender";
 import { useDispatch } from "react-redux";
 import { addAppointment } from "../features/apptSlice";
 import { Link } from "react-router-dom";
+import patients from "../data/patients.json";
 
 const Scheduling = () => {
   const dispatch = useDispatch();
@@ -22,6 +23,22 @@ const Scheduling = () => {
     });
   };
 
+  const [selectedPatient, setSelectedPatient] = useState(null);
+  const handlePatientSelect = (patientMrn) => {
+    const patient = patients.find((p) => p.mrn === patientMrn);
+    // Check if the patient was found before setting state
+    if (patient) {
+      setSelectedPatient(patient);
+      setAppointmentDetails({
+        ...appointmentDetails,
+        patient: patient.name, // Set the patient name for the appointment
+      });
+    } else {
+      console.error("Patient not found for MRN:", patientMrn);
+      setSelectedPatient(null);
+    }
+  };
+
   const handleSubmit = () => {
     if (!appointmentDetails.time) {
       alert("Please select a time slot before scheduling.");
@@ -36,6 +53,7 @@ const Scheduling = () => {
 
     const serializableAppointmentDetails = {
       ...appointmentDetails,
+      patientDetails: selectedPatient,
       time: {
         start: appointmentDetails.time.start.toISOString(),
         end: appointmentDetails.time.end.toISOString(),
@@ -46,7 +64,7 @@ const Scheduling = () => {
   };
 
   return (
-    <div className="p-10">
+    <div className="px-10 py-5">
       <h1 className="text-center font-semibold text text-3xl mb-10 text-blue-700">
         Schedule an Appointment
       </h1>
@@ -61,7 +79,7 @@ const Scheduling = () => {
         <CustomCalendar onSlotSelect={handleSlotSelect} />
       </div>
       <div className="mt-5">
-        <input
+        {/* <input
           className="border-b-2 border-neutral-100 focus:outline-none text-neutral-700"
           type="text"
           placeholder="Patient Name"
@@ -72,7 +90,20 @@ const Scheduling = () => {
               patient: e.target.value,
             })
           }
-        />
+        /> */}
+        <select
+          className="border-b-2 border-neutral-100 focus:outline-none text-neutral-700"
+          value={selectedPatient ? selectedPatient.mrn : ""}
+          onChange={(e) => handlePatientSelect(e.target.value)}
+        >
+          <option>Select a Patient</option>
+          {patients.map((patient) => (
+            <option key={patient.mrn} value={patient.mrn}>
+              {patient.name}
+            </option>
+          ))}
+        </select>
+
         <select
           className="mr-7 ml-7 focus:outline-none border rounded border-neutral-200 p-2 text-neutral-500"
           value={appointmentDetails.appointmentType}
@@ -98,6 +129,45 @@ const Scheduling = () => {
           Schedule
         </button>
       </div>
+      {selectedPatient && (
+        <div className="mt-5 text-neutral-600 bg-white shadow-md flex w-fit gap-5 border rounded-lg p-5">
+          {/* <h3>Patient Details:</h3> */}
+          <img
+            src={selectedPatient.photo}
+            alt={`Profile of ${selectedPatient.name}`}
+          />
+          <div>
+            <p>
+              <span className="font-semibold">Name:</span>{" "}
+              {selectedPatient.name}
+            </p>
+            <p>
+              <span className="font-semibold">Date of Birth:</span>{" "}
+              {selectedPatient.DOB}
+            </p>
+            <p>
+              <span className="font-semibold">Phone:</span>{" "}
+              {selectedPatient.phone}
+            </p>
+          </div>
+
+          <div>
+            {/* <h4>Insurance Details:</h4> */}
+            <p>
+              <span className="font-semibold">Insurance Name:</span>{" "}
+              {selectedPatient.insurance.name}
+            </p>
+            <p>
+              <span className="font-semibold">Insurance ID:</span>{" "}
+              {selectedPatient.insurance.id}
+            </p>
+            <p>
+              <span className="font-semibold">Insurance Group:</span>{" "}
+              {selectedPatient.insurance.group}
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
