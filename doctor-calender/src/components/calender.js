@@ -18,7 +18,7 @@ const CustomCalendar = ({ onSlotSelect }) => {
     // Add the new event to the existing events
     setEvents([...events, newEvent]);
 
-    console.log("Selected Slot Info: ", slotInfo);
+    // console.log("Selected Slot Info: ", slotInfo);
     // Pass the selected slot info to the parent component
     onSlotSelect(slotInfo);
   };
